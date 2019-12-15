@@ -1,0 +1,10 @@
+{
+    "paths": [
+        "./"
+    ],
+    "ignorePaths": [
+        "node_modules"
+    ],
+    "ignoreTexts": [],
+    "ignoreAnotation": true
+}

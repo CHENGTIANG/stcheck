@@ -1,0 +1,24 @@
+{
+  "name": "stcheck",
+  "version": "1.0.1",
+  "description": "檢查代碼中的簡體字或繁體字工具",
+  "main": "index.js",
+  "keywords": [
+    "简体",
+    "簡體",
+    "繁体",
+    "繁體",
+    "stcheck"
+  ],
+  "bin": {
+    "stcheck": "./bin/stcheck"
+  },
+  "scripts": {
+    "test": "./bin/stcheck"
+  },
+  "author": "Grant",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^14.2.0"
+  }
+}

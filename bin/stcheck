@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+const STEngine = require("../");
+const { getConfig } = require("../lib/config");
+var yargs = require("yargs")
+yargs.options({
+    "type": {
+        type: "string",
+        alias: "T",
+        describe: "檢查類型：“S”為檢查簡體字，“T”為檢查繁體字。"
+    },
+    "config": {
+        type: "string",
+        alias: "C",
+        describe: "指定配置文件"
+    },
+})
+    .usage("Usage: stcheck [options]")
+    .help('h')
+    .alias('h', 'help');
+const argv = yargs.argv
+    ;
+(() => {
+
+    const type = (argv.type || 'S').toUpperCase()
+    let dict = {}
+    if (type === 'S') {
+        dict = require('../lib/st.json')
+    } else if (type === 'T') {
+        dict = require('../lib/ts.json')
+    } else {
+        console.log('參數不合法')
+        process.exit(1);
+        return
+    }
+    new STEngine(Object.assign({ dict }, getConfig(argv.config))).check()
+    console.log("已檢查完畢")
+    process.exit(0);
+})()

@@ -1,6 +1,6 @@
 {
   "name": "stcheck",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "檢查代碼中的簡體字或繁體字工具",
   "main": "index.js",
   "keywords": [
@@ -17,7 +17,11 @@
     "test": "./bin/stcheck"
   },
   "author": "Grant",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CHENGTIANG/stcheck.git"
+  },
   "dependencies": {
     "yargs": "^14.2.0"
   }

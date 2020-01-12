@@ -47,7 +47,7 @@ yarn global add stcheck  //全局安装
 属性  | 描述 | 默认值
 ------------- | ------------- | -------------
 paths  | 要检查的目录 | ["./"]
-ignore | 忽略文件目錄規則 |["node_modules/**", ".git/**"]
+ignore | 忽略文件目錄規則 |["node_modules/\*\*", ".git/\*\*"]
 ignoreText | 忽略的文本 | []
 ignoreAnotation | 是否忽略注释 | true
 

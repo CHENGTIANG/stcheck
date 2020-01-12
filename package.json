@@ -1,6 +1,6 @@
 {
   "name": "stcheck",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "檢查代碼中的簡體字或繁體字工具",
   "main": "index.js",
   "keywords": [
@@ -23,6 +23,7 @@
     "url": "https://github.com/CHENGTIANG/stcheck.git"
   },
   "dependencies": {
+    "minimatch": "^3.0.4",
     "yargs": "^14.2.0"
   }
 }

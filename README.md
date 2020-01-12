@@ -30,13 +30,13 @@ yarn global add stcheck  //全局安装
     "paths": [
         "./"
     ],
-    "ignorePaths": [
-        "node_modules",
-        ".png",
-        ".jpg",
-        ".css"
+    "ignore": [
+        "node_modules/**",
+        "*.png",
+        "*.jpg",
+        "*.css"
     ],
-    "ignoreTexts": [
+    "ignoreText": [
         "简体中文",
         "台"
     ],
@@ -47,8 +47,8 @@ yarn global add stcheck  //全局安装
 属性  | 描述 | 默认值
 ------------- | ------------- | -------------
 paths  | 要检查的目录 | ["./"]
-ignorePaths | 忽略检查的目录 |["node_modules"]
-ignoreTexts | 忽略的文本 | []
+ignore | 忽略文件目錄規則 |["node_modules/**", ".git/**"]
+ignoreText | 忽略的文本 | []
 ignoreAnotation | 是否忽略注释 | true
 
 ####然後在總端運行

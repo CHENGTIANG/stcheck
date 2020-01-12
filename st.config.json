@@ -2,9 +2,10 @@
     "paths": [
         "./"
     ],
-    "ignorePaths": [
-        "node_modules"
+    "ignore": [
+        "node_modules/**",
+        ".git/**"
     ],
-    "ignoreTexts": [],
+    "ignoreText": [],
     "ignoreAnotation": true
 }

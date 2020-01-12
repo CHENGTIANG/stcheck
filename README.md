@@ -1,13 +1,13 @@
 #安装
 
-Install with npm:
+使用```npm```安装:
 
 ```bash
 npm install --save-dev stcheck
 npm install stcheck -g //全局安装
 ```
 
-Install with yarn:
+使用```yarn```安装:
 
 ```bash
 yarn add stcheck --dev

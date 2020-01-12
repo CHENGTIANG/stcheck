@@ -1,6 +1,6 @@
 {
   "name": "stcheck",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "檢查代碼中的簡體字或繁體字工具",
   "main": "index.js",
   "keywords": [

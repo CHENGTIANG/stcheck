@@ -87,11 +87,11 @@ npm run stcheck
 #例子：
 ```
 //檢查簡體字（type默認‘S’）
-npm run stcheck --type S 
+./node_modules/.bin/stcheck --type S 
 
 
 //檢查繁體字
-npm run stcheck --type T 
+./node_modules/.bin/stcheck --type T --config st2.config.json
 
 ```
 

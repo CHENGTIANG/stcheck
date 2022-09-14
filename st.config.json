@@ -1,11 +1,9 @@
 {
-    "paths": [
-        "./"
-    ],
-    "ignore": [
-        "node_modules/**",
-        ".git/**"
-    ],
-    "ignoreText": [],
-    "ignoreAnotation": true
+  "patterns": [
+    "./**/*.(ts|js|tsx|jsx|vue|html)",
+    "!**/node_modules/**",
+    "!git/**"
+  ],
+  "ignoreTexts": ["简体中文"],
+  "ignoreComments": true
 }

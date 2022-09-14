@@ -1,20 +1,20 @@
-#安裝
+# 安裝
 
-使用```npm```安裝:
+使用`npm`安裝:
 
 ```bash
 npm install --save-dev stcheck
 npm install stcheck -g //全局安裝
 ```
 
-使用```yarn```安裝:
+使用`yarn`安裝:
 
 ```bash
 yarn add stcheck --dev
 yarn global add stcheck  //全局安裝
 ```
 
-#介紹
+# 介紹
 幫助你檢查代碼中的簡體字或繁體字。
 
 #適用場景
@@ -22,36 +22,31 @@ yarn global add stcheck  //全局安裝
 * 因工作與生活需要，經常切換電腦輸入法簡體/繁體輸入，導致項目中文本混合使用了簡體中文與繁體中文，需要找出相關字眼修改。
 
 
-#開始使用
-####配置文件
+# 開始使用
+#### 配置文件
 在項目根目錄下創建 ```st.config.json``` 文件，内容參考以下例子：
 ```
 {
-    "paths": [
-        "./"
-    ],
-    "ignore": [
-        "node_modules/**",
-        "*.png",
-        "*.jpg",
-        "*.css"
-    ],
-    "ignoreText": [
-        "简体中文",
-        "台"
-    ],
-    "ignoreAnotation": true
+  "patterns": [
+    "./**/*.(ts|js|tsx|jsx|vue|html)",
+    "!**/node_modules/**",
+    "!git/**"
+  ],
+  "gitignore": true,
+  "ignoreTexts": ["简体中文"],
+  "ignoreComments": true
 }
 ```
 
 屬性  | 描述 | 默認值
 ------------- | ------------- | -------------
-paths  | 要檢查的目錄 | ["./"]
-ignore | 忽略文件目錄規則 |["node_modules/\*\*", ".git/\*\*"]
-ignoreText | 忽略的文本 | []
-ignoreAnotation | 是否忽略註釋 | true
+patterns  | glob模式匹配文件 | []
+gitignore | 支持`.gitignore` | false
+ignoreTexts | 忽略的文本 | []
+ignoreComments | 是否忽略註釋 | true
 
-####然後在總端運行
+
+#### 然後在總端運行
 
 方式一：
 ```bash
@@ -84,7 +79,7 @@ npm run stcheck
 
 
 
-#例子：
+# 例子：
 ```
 //檢查簡體字（type默認‘S’）
 ./node_modules/.bin/stcheck --type S 

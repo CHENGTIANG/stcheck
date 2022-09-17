@@ -2,7 +2,7 @@
   "name": "stcheck",
   "version": "2.0.0",
   "description": "檢查代碼中的簡體字或繁體字工具",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "简体",
     "簡體",
